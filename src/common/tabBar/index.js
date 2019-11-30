@@ -3,7 +3,7 @@ import {withRouter} from "react-router-dom";
 import {TabBarRoute} from "../../router";
 import {Footer} from "./styled"
 import { Icon } from 'antd';
-
+@withRouter
 class TabBar extends React.Component {
     render(){
         // 接受 tabbar中传递的路径
@@ -30,4 +30,4 @@ class TabBar extends React.Component {
     }
 }
 
-export default withRouter(TabBar) 
+export default TabBar
